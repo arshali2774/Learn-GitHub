@@ -64,6 +64,31 @@ git commit -m "Merge remote changes"
 git push root <branch-name>
 ```
 
-github changes here
+5. If you want a linear commit history and don't want this merge to show in the commit history, you can use the following command:
 
-changes here
+```bash
+git pull --rebase root <branch-name>
+```
+
+6. Resolve the conflicts manually, mark them as resolved.
+
+```bash
+git add .
+```
+
+7. Continue the rebase process:
+
+```bash
+git rebase --continue
+```
+
+8. This will open an interactive editor where you can edit the commit message. If you want to update the commit message, you can do it here. Otherwise just save the file and close the editor.
+
+9. After that you can push the changes to remote repository with the following command:
+
+```bash
+git push root <branch-name>
+```
+
+> [!WARNING]
+> There might be a case where a new file is added or removed instead of change in the existing file. In that case, you will have to add the new file or remove the file from the staging area.
