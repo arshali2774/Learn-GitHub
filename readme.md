@@ -100,3 +100,15 @@ git push root <branch-name>
 ```bash
 git branch <branch-name>
 ```
+
+2. To delete a branch if it has been merged, you can run the following command:
+
+```bash
+git branch -d <branch-name>
+```
+
+3. To delete the remote branch, you can run the following command:
+
+```bash
+git push origin --delete <branch-name>
+```
