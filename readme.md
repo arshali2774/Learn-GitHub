@@ -63,4 +63,9 @@ git add .
 git commit -m "Merge remote changes"
 git push root <branch-name>
 ```
+<<<<<<< HEAD
 github changes here
+=======
+
+changes here
+>>>>>>> fe44849 (local changes)
