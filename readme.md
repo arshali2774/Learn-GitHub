@@ -20,8 +20,7 @@ git config --global core.autocrlf true
 
 1. Setup a remote repository
 
-> [!NOTE] Remote Name
-> The name of the remote repository we use is `origin` by default. But you can change it to any name you want. Like I have used `root` here instead of `origin`.
+> **📘 Note:** The name of the remote repository we use is `origin` by default. However, you can change it to any name you like. For instance, I've used `root` here instead of `origin`.
 
 ```bash
 git remote add root <remote-repository-url>
