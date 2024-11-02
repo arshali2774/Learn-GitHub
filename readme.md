@@ -20,13 +20,14 @@ git config --global core.autocrlf true
 
 1. Setup a remote repository
 
-> **📘 Note:** The name of the remote repository we use is `origin` by default. However, you can change it to any name you like. For instance, I've used `root` here instead of `origin`.
+   > [!NOTE]
+   > The name of the remote repository we use is `origin` by default. However, you can change it to any name you like. For instance, I've used `root` here instead of `origin`.
 
 ```bash
 git remote add root <remote-repository-url>
 ```
 
-2. If you want to push your local branch to the remote repository, you can run the following command:
+1. If you want to push your local branch to the remote repository, you can run the following command:
 
 ```bash
 git push -u root <branch-name>
