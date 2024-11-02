@@ -92,3 +92,11 @@ git push root <branch-name>
 
 > [!WARNING]
 > There might be a case where a new file is added or removed instead of change in the existing file. In that case, you will have to add the new file or remove the file from the staging area.
+
+### `git branch`
+
+1. If you want to create a new branch, you can run the following command:
+
+```bash
+git branch <branch-name>
+```
