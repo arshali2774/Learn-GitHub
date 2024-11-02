@@ -30,11 +30,36 @@ git config --global core.autocrlf true
 git remote add root <remote-repository-url>
 ```
 
-1. If you want to push your local branch to the remote repository, you can run the following command:
+2. If you want to push your local branch to the remote repository, you can run the following command:
 
 ```bash
 git push -u root <branch-name>
 ```
 
-hello
-some change here
+### `git pull`
+
+1. If you want to pull the latest changes from the remote repository to your local repository, you can run the following command:
+
+```bash
+git pull root <branch-name>
+```
+
+2. If there are updates in remote repository, and you have also some commited changes in your local repository. When you will try to push local changes to remote repository, you will get an error like this:
+
+```bash
+Your branch and 'root/main' have diverged,
+```
+
+3. To resolve this issue, you can run the following command:
+
+```bash
+git pull
+```
+
+4. This will pull the remote changes however the automatic merge will not be done. You will have to do it manually. After that you can save the file and commit the changes.
+
+```bash
+git add .
+git commit -m "Merge remote changes"
+git push root <branch-name>
+```
